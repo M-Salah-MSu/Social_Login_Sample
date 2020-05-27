@@ -1,0 +1,15 @@
+<p>{{title}}</p>
+
+<button (click)="signIn('Google');">Google SignIn</button>
+
+<br /><br />
+
+<button (click)="signOut();">Sign Out</button>
+
+<br /><br />
+
+<div *ngIf="user">
+  <img src="{{user.photoUrl}}" alt="" />
+  <h4>{{user.name}}</h4>
+  <p>{{user.email}}</p>
+</div>
